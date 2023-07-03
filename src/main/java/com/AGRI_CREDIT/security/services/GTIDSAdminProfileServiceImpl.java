@@ -62,6 +62,14 @@ public class GTIDSAdminProfileServiceImpl implements GTIDSAdminProfileService {
 
         }
 
+        if (Objects.nonNull(gtidsadminprofile.getAddress())
+                && !"".equalsIgnoreCase(
+                gtidsadminprofile.getAddress())) {
+            gtidsadminprofileDB.setAddress(
+                    gtidsadminprofile.getAddress());
+
+        }
+        
         if (Objects.nonNull(gtidsadminprofile.getKYC())
                 && !"".equalsIgnoreCase(
                 gtidsadminprofile.getKYC())) {
