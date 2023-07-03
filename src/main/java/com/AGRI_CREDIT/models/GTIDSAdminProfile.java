@@ -23,6 +23,7 @@ public class GTIDSAdminProfile {
     private Long Id;
     private String Name;
     private String Age;
+    private String Address;
     private String PhoneNumber;
     private String BankDetails;
     private String KYC;
